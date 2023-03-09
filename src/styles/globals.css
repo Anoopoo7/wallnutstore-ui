@@ -3,6 +3,28 @@
 .font-itim {
   font-family: 'Itim', cursive;
 }
-.pointer{
+.pointer {
   cursor: pointer;
+}
+.bg-universe {
+  background-color: #d9d9d9;
+}
+
+/* product card */
+.product-card-outer {
+  width: 295px;
+  height: 380px;
+  background: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.img-center-product-card{
+  width: 100%;
+  height: 235px;
+  overflow: hidden;
+  object-fit:cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
 }

@@ -1,5 +1,6 @@
 {
   "NAVBAR": "navbar",
-  "GRID_BANNER":"grid_banner",
-  "CAROUSEL_BANNER":"carousel_banner"
+  "GRID_BANNER": "grid_banner",
+  "CAROUSEL_BANNER": "carousel_banner",
+  "PRODUCT_CAROUSEL": "product_carousel"
 }

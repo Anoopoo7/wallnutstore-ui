@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="bg-secondary pt-2">
+    <div className="bg-universe pt-2">
       <Component {...pageProps} />
     </div>
   )

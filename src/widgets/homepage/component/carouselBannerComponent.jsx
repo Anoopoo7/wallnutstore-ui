@@ -12,12 +12,11 @@ const CarouselBannerComponent = ({ payload }) => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
   }
 
-  console.log(payload)
-
   return (
-    <Card className="p-2 mt-3 mb">
+    <Card className="p-2 mb">
       <Slider {...settings}>
         {payload?.items?.map((each, index) => (
           <div key={index}>

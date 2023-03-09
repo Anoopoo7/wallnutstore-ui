@@ -40,20 +40,68 @@ export async function getStaticProps(context) {
           ],
         },
         {
-          code:"carousel_banner",
-          items:[
+          code: 'product_carousel',
+          items: [
             {
-              image:"https://img.freepik.com/premium-vector/big-sale-social-media-cover-facebook-banner-template_622110-112.jpg",
-              navigation:false,
-              url:""
+              badge: 50,
+              isWishlisted: true,
+              image:
+                'https://rukminim1.flixcart.com/image/612/612/xif0q/helmet/e/l/s/full-face-helmet-blue-limited-edition-isi-motorbike-helmet-blue-original-imagm8y2bjsbhytb.jpeg',
+              name: 'Vega Atom helmet',
+              price: 2300,
             },
             {
-              image:"https://img.freepik.com/premium-vector/big-sale-social-media-cover-facebook-banner-template_622110-112.jpg",
-              navigation:true,
-              url:"/ppp"
-            }
-          ]
-        }
+              badge: null,
+              isWishlisted: true,
+              image:
+                'https://rukminim1.flixcart.com/image/612/612/l1mh7rk0/helmet/h/o/g/-original-imagd5f95czppjyg.jpeg',
+              name: 'Spinwave tritom helmet',
+              price: 1900,
+            },
+            {
+              badge: null,
+              isWishlisted: true,
+              image:
+                'https://rukminim1.flixcart.com/image/612/612/krayqa80/rucksack/o/n/z/70l-travel-backpack-for-outdoor-sport-camp-hiking-trekking-bag-original-imag54hsvebyfjkb.jpeg',
+              name: 'Balgium bage catterceek',
+              price: 1100,
+            },
+            {
+              badge: 69,
+              isWishlisted: true,
+              image:
+                'https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/d/n/l/9-fast-white-perrot-sfr-white-perrot-original-imagj52ctxvu6ewf.jpeg',
+              name: 'Pime brag securities bag',
+              price: 980,
+            },
+            {
+              badge: null,
+              isWishlisted: true,
+              image:
+                'https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/t/q/w/-original-imagmfquwff5tkwz.jpeg',
+              name: 'Vega Atom helmet',
+              price: 2300,
+            },
+          ],
+        },
+        {
+          code: 'carousel_banner',
+          items: [
+            {
+              image:
+                'https://img.freepik.com/premium-vector/big-sale-social-media-cover-facebook-banner-template_622110-112.jpg',
+              navigation: false,
+              url: '',
+            },
+            {
+              image:
+                'https://img.freepik.com/premium-vector/big-sale-social-media-cover-facebook-banner-template_622110-112.jpg',
+              navigation: true,
+              url: '/ppp',
+            },
+          ],
+        },
+        
       ],
     },
   }
