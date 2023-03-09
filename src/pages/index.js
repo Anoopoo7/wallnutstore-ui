@@ -1,5 +1,6 @@
 import HomepageLayouts from '@use/layoutHandle/homepageLayouts'
 import { Container } from 'reactstrap'
+import useTranslation from 'next-translate/useTranslation'
 
 export async function getStaticProps(context) {
   return {
