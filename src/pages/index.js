@@ -43,12 +43,12 @@ export async function getStaticProps(context) {
           code:"carousel_banner",
           items:[
             {
-              image:"https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg",
+              image:"https://img.freepik.com/premium-vector/big-sale-social-media-cover-facebook-banner-template_622110-112.jpg",
               navigation:false,
               url:""
             },
             {
-              image:"https://images.pexels.com/photos/936081/pexels-photo-936081.jpeg",
+              image:"https://img.freepik.com/premium-vector/big-sale-social-media-cover-facebook-banner-template_622110-112.jpg",
               navigation:true,
               url:"/ppp"
             }

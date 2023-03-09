@@ -1,7 +1,7 @@
 import CarouselBannerComponent from '../component/carouselBannerComponent'
 
-const CarouselBanner = () => {
-  return <CarouselBannerComponent />
+const CarouselBanner = ({ payload }) => {
+  return <CarouselBannerComponent payload={payload} />
 }
 
 export default CarouselBanner

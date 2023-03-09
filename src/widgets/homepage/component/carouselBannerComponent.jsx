@@ -1,24 +1,34 @@
+/* eslint-disable @next/next/no-img-element */
+import { useRouter } from 'next/router'
 import Slider from 'react-slick'
 import { Card } from 'reactstrap'
 
-const CarouselBannerComponent = () => {
+const CarouselBannerComponent = ({ payload }) => {
+  const router = useRouter()
   const settings = {
     dots: true,
     infinite: true,
     lazyLoad: true,
     speed: 500,
     slidesToShow: 1,
-    slidesToScroll: 1
+    slidesToScroll: 1,
   }
+
+  console.log(payload)
+
   return (
-    <Card className="p-2 mt-3 mb-3">
+    <Card className="p-2 mt-3 mb">
       <Slider {...settings}>
-        <div>
-          <h3>1</h3>
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
+        {payload?.items?.map((each, index) => (
+          <div key={index}>
+            <img
+              onClick={() => each?.navigation && router.push(each?.url)}
+              className={`img-fluid w-100 ${each?.navigation ? 'pointer' : ''}`}
+              src={each.image}
+              alt=""
+            />
+          </div>
+        ))}
       </Slider>
     </Card>
   )
