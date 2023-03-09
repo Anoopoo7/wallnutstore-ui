@@ -38,6 +38,21 @@ export async function getStaticProps(context) {
             },
           ],
         },
+        {
+          code:"carousel_banner",
+          items:[
+            {
+              image:"https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg",
+              navigation:false,
+              url:""
+            },
+            {
+              image:"https://images.pexels.com/photos/936081/pexels-photo-936081.jpeg",
+              navigation:true,
+              url:"/ppp"
+            }
+          ]
+        }
       ],
     },
   }

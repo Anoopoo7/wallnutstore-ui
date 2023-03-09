@@ -1,4 +1,5 @@
 {
   "NAVBAR": "navbar",
-  "GRID_BANNER":"grid_banner"
+  "GRID_BANNER":"grid_banner",
+  "CAROUSEL_BANNER":"carousel_banner"
 }
