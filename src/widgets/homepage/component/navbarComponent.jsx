@@ -14,7 +14,7 @@ const NavbarComponent = ({ payload }) => {
         <div className="navlinks d-flex mt-1">
           {Array.isArray(navlinks) &&
             navlinks.map((link) => (
-              <div className="nav-icon border ms-1 me-1 p-1 rounded pointer">
+              <div className="nav-icon border-black ms-1 me-1 p-1 rounded pointer">
                 <img src={link} alt={link} />
               </div>
             ))}

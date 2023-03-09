@@ -9,7 +9,9 @@
 .bg-universe {
   background-color: #d9d9d9;
 }
-
+.border-black{
+  border:1px solid rgba(31, 31, 31, 0.479)
+}
 /* product card */
 .product-card-outer {
   width: 295px;
