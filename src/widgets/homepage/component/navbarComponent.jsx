@@ -13,7 +13,7 @@ const NavbarComponent = ({ payload }) => {
         <div className="navlinks d-flex mt-1">
           {Array.isArray(navlinks) &&
             navlinks.map((link) => (
-              <div className="nav-icon border-black ms-1 me-1 p-1 rounded pointer hover-red">
+              <div className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red">
                 <img src={link} alt={link} />
               </div>
             ))}

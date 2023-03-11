@@ -48,6 +48,8 @@ const ProductCarouselComponent = ({ payload }) => {
       autoplay={true}
       responsive={responsive}
       className="mt-4"
+      stopOnHover={true}
+      loop={true}
     >
       {Array.isArray(items) &&
         items.map((each, i) => <ProductCardComponent data={each} key={i} />)}
