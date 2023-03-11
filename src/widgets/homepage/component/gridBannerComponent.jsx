@@ -17,7 +17,9 @@ const GridBannerComponent = ({ payload }) => {
               }`}
               src={img1?.image}
               alt=""
-              onClick={() => img1?.navigation && router.push(img1?.url)}
+              onClick={() =>
+                img1?.navigation && router.push(img1?.url)
+              }
             />
           </Card>
         </Col>

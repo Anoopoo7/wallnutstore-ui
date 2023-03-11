@@ -6,7 +6,6 @@ import useTranslation from 'next-translate/useTranslation'
 const NavbarComponent = ({ payload }) => {
   const { t } = useTranslation('common')
   const { name, navlinks } = payload
-  console.log(t(('site_logo')));
   return (
     <Card className="p-1 p-lg-2 font-itim mt-3 mb-1">
       <div className="d-flex justify-content-between">
@@ -14,7 +13,7 @@ const NavbarComponent = ({ payload }) => {
         <div className="navlinks d-flex mt-1">
           {Array.isArray(navlinks) &&
             navlinks.map((link) => (
-              <div className="nav-icon border-black ms-1 me-1 p-1 rounded pointer">
+              <div className="nav-icon border-black ms-1 me-1 p-1 rounded pointer hover-red">
                 <img src={link} alt={link} />
               </div>
             ))}
