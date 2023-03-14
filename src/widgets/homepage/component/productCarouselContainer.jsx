@@ -40,7 +40,7 @@ const responsive = {
 }
 
 const ProductCarouselComponent = ({ payload }) => {
-  const { items } = payload
+  const { data } = payload
   return (
     <OwlCarousel
       responsiveClass={true}
@@ -51,8 +51,9 @@ const ProductCarouselComponent = ({ payload }) => {
       stopOnHover={true}
       loop={true}
     >
-      {Array.isArray(items) &&
-        items.map((each, i) => <ProductCardComponent data={each} key={i} />)}
+      {data &&
+        Array.isArray(data) &&
+        data.map((each, i) => <ProductCardComponent data={each} key={i} />)}
     </OwlCarousel>
   )
 }

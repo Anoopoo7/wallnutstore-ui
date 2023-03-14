@@ -4,6 +4,7 @@ import Slider from 'react-slick'
 import { Card } from 'reactstrap'
 
 const CarouselBannerComponent = ({ payload }) => {
+  const { data } = payload || {}
   const router = useRouter()
   const settings = {
     dots: true,
@@ -16,18 +17,22 @@ const CarouselBannerComponent = ({ payload }) => {
   }
 
   return (
-    <Card className="p-2 mb">
+    <Card className="p-2 mt-2 mt-md-3">
       <Slider {...settings}>
-        {payload?.items?.map((each, index) => (
-          <div key={index}>
-            <img
-              onClick={() => each?.navigation && router.push(each?.url)}
-              className={`img-fluid w-100 ${each?.navigation ? 'pointer' : ''}`}
-              src={each.image}
-              alt=""
-            />
-          </div>
-        ))}
+        {data &&
+          Array.isArray(data) &&
+          data.map((each, index) => (
+            <div key={index}>
+              <img
+                onClick={() => each?.navigation && router.push(each?.url)}
+                className={`img-fluid w-100 ${
+                  each?.navigation ? 'pointer' : ''
+                }`}
+                src={each.image}
+                alt=""
+              />
+            </div>
+          ))}
       </Slider>
     </Card>
   )
