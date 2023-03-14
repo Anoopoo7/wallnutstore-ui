@@ -11,6 +11,7 @@ export async function getStaticProps(context) {
       props: {
         pageContent: response?.data?.contents || [],
       },
+      revalidate: 5, // add revalidate key with value of 2 seconds
     }
   }
   // return {
