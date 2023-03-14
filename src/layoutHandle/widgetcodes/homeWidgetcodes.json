@@ -1,7 +1,7 @@
 {
   "NAVBAR": "navbar",
-  "GRID_BANNER": "grid_banner",
-  "CAROUSEL_BANNER": "carousel_banner",
-  "PRODUCT_CAROUSEL": "product_carousel",
+  "GRID_BANNER": "grid",
+  "CAROUSEL_BANNER": "carousel",
+  "PRODUCT_CAROUSEL": "products",
   "FOOTER": "footer"
 }

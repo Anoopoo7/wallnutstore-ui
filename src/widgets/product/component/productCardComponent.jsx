@@ -1,6 +1,9 @@
+import { useRouter } from 'next/router'
+
 /* eslint-disable @next/next/no-img-element */
 const ProductCardComponent = ({ data }) => {
-  const { badge, image, isWishlisted, name, price } = data || {}
+  const { badge, image, isWishlisted, name, price, url } = data || {}
+  const router = useRouter()
   return (
     <div className="product-card-outer">
       <div className="d-flex justify-content-between p-2">
@@ -17,7 +20,7 @@ const ProductCardComponent = ({ data }) => {
           />
         </p>
       </div>
-      <div className="img-center-product-card">
+      <div className="img-center-product-card" onClick={() => router.push(url)}>
         <img src={image} alt={image} className="img-fluid p-4" />
       </div>
       <div className="mt-3">
