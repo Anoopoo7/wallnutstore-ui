@@ -1,25 +1,26 @@
 /* eslint-disable @next/next/no-img-element */
 import { useRouter } from 'next/router'
 import { Card, Col, Row } from 'reactstrap'
+import { TransilationProvider } from '@use/utils/TransilationProvider'
 
 const GridBannerComponent = ({ payload }) => {
-  const gridBannerSettings = payload?.data?.data || {}
+  const bannner = payload?.contents || []
   const router = useRouter()
   return (
     <>
-      {gridBannerSettings && Array.isArray(gridBannerSettings) && (
+      {bannner && Array.isArray(bannner) && (
         <Row>
           <Col md="8">
             <Card className="p-2 mt-3">
               <img
                 className={`img-fluid rounded ${
-                  gridBannerSettings[0]?.navigation ? 'pointer' : ''
+                  bannner?.[0]?.spec?.navigate ? 'pointer' : ''
                 }`}
-                src={gridBannerSettings[0]?.image}
+                src={TransilationProvider(bannner?.[0]?.spec?.image)}
                 alt=""
                 onClick={() =>
-                  gridBannerSettings[0]?.navigation &&
-                  router.push(gridBannerSettings[0]?.url)
+                  bannner?.[0]?.spec?.navigate &&
+                  router.push(bannner?.[0]?.spec?.redirect_url)
                 }
               />
             </Card>
@@ -29,16 +30,16 @@ const GridBannerComponent = ({ payload }) => {
               <Col sm="12">
                 <Card
                   className={`p-1 mt-2 mt-md-3 ${
-                    gridBannerSettings[1]?.navigation ? 'pointer' : ''
+                    bannner?.[1]?.spec?.navigate ? 'pointer' : ''
                   }`}
                 >
                   <img
                     className="img-fluid m-1 rounded"
-                    src={gridBannerSettings[1]?.image}
+                    src={TransilationProvider(bannner?.[1]?.spec?.image)}
                     alt=""
                     onClick={() =>
-                      gridBannerSettings[1]?.navigation &&
-                      router.push(gridBannerSettings[1]?.url)
+                      bannner?.[1]?.spec?.navigate &&
+                      router.push(bannner?.[2]?.spec?.redirect_url)
                     }
                   />
                 </Card>
@@ -46,16 +47,16 @@ const GridBannerComponent = ({ payload }) => {
               <Col sm="12">
                 <Card
                   className={`p-1 mt-2 mt-md-4 ${
-                    gridBannerSettings[2]?.navigation ? 'pointer' : ''
+                    bannner?.[2]?.spec?.navigate ? 'pointer' : ''
                   }`}
                 >
                   <img
                     className="img-fluid m-1 rounded"
-                    src={gridBannerSettings[2]?.image}
+                    src={TransilationProvider(bannner?.[0]?.spec?.image)}
                     alt=""
                     onClick={() =>
-                      gridBannerSettings[2]?.navigation &&
-                      router.push(gridBannerSettings[2]?.url)
+                      bannner?.[2]?.spec?.navigate &&
+                      router.push(bannner?.[2]?.spec?.redirect_url)
                     }
                   />
                 </Card>

@@ -1,15 +1,13 @@
 import HomepageLayouts from '@use/layoutHandle/homepageLayouts'
 import { Container } from 'reactstrap'
-import useTranslation from 'next-translate/useTranslation'
-import { useMemo } from 'react'
 import { getContentByPageType } from '@use/services/pageContentService'
 
 export async function getStaticProps(context) {
-  const response = await getContentByPageType('home')
+  const response = await getContentByPageType('homes')
   if (response && response.success) {
     return {
       props: {
-        pageContent: response?.data?.contents || [],
+        widgets: response?.data?.widgets || [],
       },
       revalidate: 5, // add revalidate key with value of 2 seconds
     }
@@ -169,10 +167,10 @@ export async function getStaticProps(context) {
   // }
 }
 
-export default function Home({ pageContent }) {
+export default function Home({ widgets }) {
   return (
     <Container>
-      <HomepageLayouts pageContent={pageContent} />
+      <HomepageLayouts widgets={widgets} />
     </Container>
   )
 }

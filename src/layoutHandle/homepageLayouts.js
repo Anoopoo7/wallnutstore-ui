@@ -5,25 +5,28 @@ import Navbar from '@use/widgets/homepage/container/navbar'
 import ProductCarousel from '@use/widgets/homepage/container/productCarousel'
 import widgetCodes from './widgetcodes/homeWidgetcodes.json'
 
-const HomepageLayouts = ({ pageContent }) => {
+const HomepageLayouts = ({ widgets }) => {
   return (
-    Array.isArray(pageContent) &&
-    pageContent.map((content) => {
-      switch (content?.code) {
-        case widgetCodes.NAVBAR:
-          return <Navbar payload={content} />
-        case widgetCodes.GRID_BANNER:
-          return <GridBanner payload={content} />
-        case widgetCodes.CAROUSEL_BANNER:
-          return <CarouselBanner payload={content} />
-        case widgetCodes.PRODUCT_CAROUSEL:
-          return <ProductCarousel payload={content} />
-        case widgetCodes.FOOTER:
-          return <Footer payload={content} />
-        default:
-          break
-      }
-    })
+    <>
+      {Array.isArray(widgets) &&
+        widgets.map((content) => {
+          switch (content?.code) {
+            case widgetCodes.NAVBAR:
+              return <Navbar payload={content} />
+            case widgetCodes.GRID_BANNER:
+              return <GridBanner payload={content} />
+            case widgetCodes.CAROUSEL_BANNER:
+              return <CarouselBanner payload={content} />
+            case widgetCodes.PRODUCT_CAROUSEL:
+              return <ProductCarousel payload={content} />
+            case widgetCodes.FOOTER:
+              return <Footer payload={content} />
+            default:
+              break
+          }
+        })}
+        <Footer />  {/* TODO: needs to integrate footer with RA  */}
+    </>
   )
 }
 

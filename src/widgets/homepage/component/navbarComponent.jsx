@@ -4,17 +4,17 @@ import { Card } from 'reactstrap'
 import useTranslation from 'next-translate/useTranslation'
 
 const NavbarComponent = ({ payload }) => {
-  const { data } = payload || {}
-  const navsettings = data?.data || {}
+  const { spec = {}, active } = payload?.contents?.[0] || {}
+  const { enable_cart, enable_profile, enable_search, enable_wishlist } = spec
   const { t } = useTranslation('common')
   return (
     <>
-      {navsettings.active && (
+      {active && (
         <Card className="p-1 p-lg-2 font-itim mt-3 mb-1">
           <div className="d-flex justify-content-between">
             <h5 className="m-2 pointer">{t('site_logo')}</h5>
             <div className="navlinks d-flex mt-1">
-              {navsettings.search && (
+              {enable_search && (
                 <div className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red">
                   <img
                     src="https://img.icons8.com/ios-glyphs/24/null/search--v1.png"
@@ -22,7 +22,7 @@ const NavbarComponent = ({ payload }) => {
                   />
                 </div>
               )}
-              {navsettings.profile && (
+              {enable_profile && (
                 <div className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red">
                   <img
                     src="https://img.icons8.com/material-sharp/24/null/person-male.png"
@@ -30,7 +30,7 @@ const NavbarComponent = ({ payload }) => {
                   />
                 </div>
               )}
-              {navsettings.wishlist && (
+              {enable_wishlist && (
                 <div className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red">
                   <img
                     src="https://img.icons8.com/material-sharp/24/null/like--v1.png"
@@ -38,7 +38,7 @@ const NavbarComponent = ({ payload }) => {
                   />
                 </div>
               )}
-              {navsettings.cart && (
+              {enable_cart && (
                 <div className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red">
                   <img
                     src="https://img.icons8.com/material-sharp/24/null/shopping-cart.png"

@@ -1,10 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
+import { TransilationProvider } from '@use/utils/TransilationProvider'
 import { useRouter } from 'next/router'
 import Slider from 'react-slick'
 import { Card } from 'reactstrap'
 
 const CarouselBannerComponent = ({ payload }) => {
-  const { data } = payload || {}
+  const { contents } = payload || {}
   const router = useRouter()
   const settings = {
     dots: true,
@@ -17,21 +18,28 @@ const CarouselBannerComponent = ({ payload }) => {
   }
 
   return (
-    <Card className="p-2 mt-2 mt-md-3">
+    <Card className="p-2 mt-1 mt-md-1">
       <Slider {...settings}>
-        {data &&
-          Array.isArray(data) &&
-          data.map((each, index) => (
-            <div key={index}>
-              <img
-                onClick={() => each?.navigation && router.push(each?.url)}
-                className={`img-fluid w-100 ${
-                  each?.navigation ? 'pointer' : ''
-                }`}
-                src={each.image}
-                alt=""
-              />
-            </div>
+        {contents &&
+          Array.isArray(contents) &&
+          contents.map((each, index) => (
+            <>
+              {each.active && (
+                <div key={index}>
+                  <img
+                    onClick={() =>
+                      each?.spec?.navigate &&
+                      router.push(each?.spec?.redirect_url)
+                    }
+                    className={`img-fluid w-100 ${
+                      each?.spec?.navigate ? 'pointer' : ''
+                    }`}
+                    src={TransilationProvider(each.spec?.image)}
+                    alt={each.name}
+                  />
+                </div>
+              )}
+            </>
           ))}
       </Slider>
     </Card>
