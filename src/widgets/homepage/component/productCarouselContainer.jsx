@@ -42,14 +42,13 @@ const responsive = {
 const ProductCarouselComponent = ({ payload }) => {
   const { contents, active } = payload
   return (
-    <>
+    <div className='basic-widget'>
       {active && (
         <OwlCarousel
           responsiveClass={true}
           lazyLoad={true}
           autoplay={true}
           responsive={responsive}
-          className="mt-4"
           stopOnHover={true}
           loop={true}
         >
@@ -60,7 +59,7 @@ const ProductCarouselComponent = ({ payload }) => {
             ))}
         </OwlCarousel>
       )}
-    </>
+    </div>
   )
 }
 

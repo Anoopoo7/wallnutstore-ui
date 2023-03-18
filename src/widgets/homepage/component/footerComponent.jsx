@@ -9,7 +9,7 @@ const FooterComponent = ({ payload }) => {
   const { changeLocale, footerLinks } = payload
   return (
     <>
-      <Card className="p-1 p-lg-2 font-itim mt-3">
+      <Card className="p-1 p-lg-2 font-itim basic-widget footer">
         <div className="d-flex justify-content-between mb-5">
           <div className="ms-3 mt-5">
             <h5>{t('join_with_us')}</h5>
@@ -42,7 +42,7 @@ const FooterComponent = ({ payload }) => {
                       className="text-dark text-decoration-none"
                       href={ltem?.link}
                     >
-                      <span className='hover-red'>{ltem?.name}</span>
+                      <span className="hover-red">{ltem?.name}</span>
                     </Link>
                   </p>
                 ))}
@@ -66,7 +66,7 @@ const FooterComponent = ({ payload }) => {
               Malayalam
             </h6>
           </div>
-          <h6 className='d-none d-md-block'>All rights received | 2023</h6>
+          <h6 className="d-none d-md-block">All rights received | 2023</h6>
         </div>
       </Card>
     </>

@@ -10,7 +10,7 @@ const NavbarComponent = ({ payload }) => {
   return (
     <>
       {active && (
-        <Card className="p-1 p-lg-2 font-itim mt-3 mb-1">
+        <Card className="p-1 p-lg-2 font-itim basic-widget">
           <div className="d-flex justify-content-between">
             <h5 className="m-2 pointer">{t('site_logo')}</h5>
             <div className="navlinks d-flex mt-1">

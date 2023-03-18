@@ -9,11 +9,11 @@ const GridBannerComponent = ({ payload }) => {
   return (
     <>
       {bannner && Array.isArray(bannner) && (
-        <Row>
+        <Row className='basic-widget'>
           <Col md="8">
-            <Card className="p-2 mt-3">
+            <Card className="p-2">
               <img
-                className={`img-fluid rounded ${
+                className={`grid-banner-1 img-fluid rounded ${
                   bannner?.[0]?.spec?.navigate ? 'pointer' : ''
                 }`}
                 src={TransilationProvider(bannner?.[0]?.spec?.image)}
@@ -29,12 +29,12 @@ const GridBannerComponent = ({ payload }) => {
             <Row>
               <Col sm="12">
                 <Card
-                  className={`p-1 mt-2 mt-md-3 ${
+                  className={`p-2 overflow-hidden ${
                     bannner?.[1]?.spec?.navigate ? 'pointer' : ''
                   }`}
                 >
                   <img
-                    className="img-fluid m-1 rounded"
+                    className="img-fluid overflow-hidden rounded grid-banner-2"
                     src={TransilationProvider(bannner?.[1]?.spec?.image)}
                     alt=""
                     onClick={() =>
@@ -46,13 +46,13 @@ const GridBannerComponent = ({ payload }) => {
               </Col>
               <Col sm="12">
                 <Card
-                  className={`p-1 mt-2 mt-md-4 ${
+                  className={`p-2 mt-2 mt-md-2 ${
                     bannner?.[2]?.spec?.navigate ? 'pointer' : ''
                   }`}
                 >
                   <img
-                    className="img-fluid m-1 rounded"
-                    src={TransilationProvider(bannner?.[0]?.spec?.image)}
+                    className="img-fluid rounded grid-banner-2"
+                    src={TransilationProvider(bannner?.[2]?.spec?.image)}
                     alt=""
                     onClick={() =>
                       bannner?.[2]?.spec?.navigate &&

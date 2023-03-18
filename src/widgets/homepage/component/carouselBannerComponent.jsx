@@ -18,7 +18,7 @@ const CarouselBannerComponent = ({ payload }) => {
   }
 
   return (
-    <Card className="p-2 mt-1 mt-md-1">
+    <Card className="p-2 basic-widget">
       <Slider {...settings}>
         {contents &&
           Array.isArray(contents) &&
@@ -31,7 +31,7 @@ const CarouselBannerComponent = ({ payload }) => {
                       each?.spec?.navigate &&
                       router.push(each?.spec?.redirect_url)
                     }
-                    className={`img-fluid w-100 ${
+                    className={`img-fluid w-100 carousel-banner ${
                       each?.spec?.navigate ? 'pointer' : ''
                     }`}
                     src={TransilationProvider(each.spec?.image)}

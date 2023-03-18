@@ -9,7 +9,7 @@ const ProductCardComponent = ({ data }) => {
   return (
     <>
       {active && (
-        <div className="product-card-outer mb-md-3">
+        <div className="product-card-outer">
           <div className="d-flex justify-content-between p-2">
             {spec?.badge ? (
               <p className="bg-danger ps-2 pe-2 rounded text-light">
@@ -42,14 +42,13 @@ const ProductCardComponent = ({ data }) => {
             </l>
             <div className="d-flex justify-content-between">
               <p className="font-itim ms-3 mt-2">₹ {spec?.price} </p>
-              <p className="font-itim me-3">
-                <div className="cart-icon p-2">
-                  <img
-                    src="https://img.icons8.com/material-sharp/20/null/shopping-cart.png"
-                    alt=""
-                  />
-                </div>
-              </p>
+              <div className="me-3">
+                <img
+                  src="https://img.icons8.com/material-sharp/20/null/shopping-cart.png"
+                  alt=""
+                  className="p-2 border rounded"
+                />
+              </div>
             </div>
           </div>
         </div>
