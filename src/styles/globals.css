@@ -58,6 +58,7 @@
   height: 71vh;
   object-fit: cover;
   object-position: center;
+  overflow: hidden;
 }
 .grid-banner-2 {
   height: 34vh;
