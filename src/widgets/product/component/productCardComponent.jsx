@@ -30,15 +30,11 @@ const ProductCardComponent = ({ data }) => {
             className="img-center-product-card"
             onClick={() => router.push(url)}
           >
-            <img
-              src={TransilationProvider(spec?.image)}
-              alt={image}
-              className="img-fluid p-4"
-            />
+            <img src={spec?.image?.[0]} alt={image} className="img-fluid p-4" />
           </div>
           <div className="mt-3">
             <l className="font-itim ms-3 mt-5">
-              {TransilationProvider(spec?.name)}
+              {TransilationProvider(spec?.name).slice(0,25)}
             </l>
             <div className="d-flex justify-content-between">
               <p className="font-itim ms-3 mt-2">₹ {spec?.price} </p>
