@@ -3,7 +3,8 @@
 import { Card } from 'reactstrap'
 import useTranslation from 'next-translate/useTranslation'
 
-const NavbarComponent = ({ payload }) => {
+const NavbarComponent = ({ payload, search }) => {
+  const { setEnableSearch } = search || {}
   const { spec = {}, active } = payload?.contents?.[0] || {}
   const { enable_cart, enable_profile, enable_search, enable_wishlist } = spec
   const { t } = useTranslation('common')
@@ -15,7 +16,10 @@ const NavbarComponent = ({ payload }) => {
             <h5 className="m-2 pointer">{t('site_logo')}</h5>
             <div className="navlinks d-flex mt-1">
               {enable_search && (
-                <div className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red">
+                <div
+                  onClick={() => setEnableSearch((prev) => !prev)}
+                  className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red"
+                >
                   <img
                     src="https://img.icons8.com/ios-glyphs/24/null/search--v1.png"
                     alt="search"

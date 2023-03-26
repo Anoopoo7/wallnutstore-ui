@@ -3,7 +3,6 @@ import { useRouter } from 'next/router'
 
 /* eslint-disable @next/next/no-img-element */
 const ProductCardComponent = ({ data }) => {
-  console.log(data)
   const { image, spec, active } = data || {}
   const router = useRouter()
   return (
@@ -28,13 +27,13 @@ const ProductCardComponent = ({ data }) => {
           </div>
           <div
             className="img-center-product-card"
-            onClick={() => router.push(url)}
+            onClick={() => router.push(spec?.redirect_url)}
           >
             <img src={spec?.image?.[0]} alt={image} className="img-fluid p-4" />
           </div>
           <div className="mt-3">
             <l className="font-itim ms-3 mt-5">
-              {TransilationProvider(spec?.name).slice(0,25)}
+              {TransilationProvider(spec?.name).slice(0, 25)}
             </l>
             <div className="d-flex justify-content-between">
               <p className="font-itim ms-3 mt-2">₹ {spec?.price} </p>

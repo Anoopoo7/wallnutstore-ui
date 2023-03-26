@@ -5,14 +5,14 @@ import Navbar from '@use/widgets/homepage/container/navbar'
 import ProductCarousel from '@use/widgets/homepage/container/productCarousel'
 import widgetCodes from './widgetcodes/homeWidgetcodes.json'
 
-const HomepageLayouts = ({ widgets }) => {
+const HomepageLayouts = ({ widgets, search }) => {
   return (
     <>
       {Array.isArray(widgets) &&
         widgets.map((content) => {
           switch (content?.code) {
             case widgetCodes.NAVBAR:
-              return <Navbar payload={content} />
+              return <Navbar payload={content} search={search} />
             case widgetCodes.GRID_BANNER:
               return <GridBanner payload={content} />
             case widgetCodes.CAROUSEL_BANNER:
@@ -25,7 +25,7 @@ const HomepageLayouts = ({ widgets }) => {
               break
           }
         })}
-        <Footer />  {/* TODO: needs to integrate footer with RA  */}
+      <Footer /> {/* TODO: needs to integrate footer with RA  */}
     </>
   )
 }
