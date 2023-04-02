@@ -85,7 +85,6 @@
   height: 34vh;
 }
 @media only screen and (max-width: 768px) {
-  .grid-banner-1,
   .grid-banner-2,
   .carousel-banner {
     height: 34vh;
