@@ -47,7 +47,7 @@ const SearchComponent = ({
                 Array.isArray(a) &&
                 a.map((each, i) => (
                   <div
-                    className="mt-1 ms-3 d-flex align-items-center border p-3 pointer"
+                    className="mt-1 ms-3 me-3 d-flex align-items-center border p-3 pointer"
                     key={i}
                     onClick={()=>router.push(each?.pageUrl)}
                   >
@@ -72,7 +72,7 @@ const SearchComponent = ({
                 Array.isArray(a) &&
                 b.map((each, i) => (
                   <div
-                    className="mt-1 ms-3 d-flex align-items-center border p-3 pointer"
+                    className="mt-1 ms-3 me-3 d-flex align-items-center border p-3 pointer"
                     key={i}
                     onClick={()=>router.push(each?.pageUrl)}
                   >
