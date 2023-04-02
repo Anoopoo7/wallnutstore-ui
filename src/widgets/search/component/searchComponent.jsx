@@ -23,7 +23,7 @@ const SearchComponent = ({
       handleTouchEnd={() => setEnableSearch(false)}
     >
       <Container>
-        <Card className="ps-2 pb-2 pe-2 ps-lg-5 pe-lg-5 pb-lg-5 pos-relative">
+        <Card className="ps-2 pb-2 pe-2 ps-lg-5 pe-lg-5 pb-lg-5">
           <div className="p-lg-5">
             <FormGroup className="mt-2 d-flex justify-content-center">
               <Input
@@ -46,17 +46,24 @@ const SearchComponent = ({
               {a &&
                 Array.isArray(a) &&
                 a.map((each, i) => (
-                  <div className="ms-3 d-flex align-items-center" key={i}>
+                  <div
+                    className="mt-1 ms-3 d-flex align-items-center border p-3 pointer"
+                    key={i}
+                    onClick={()=>router.push(each?.pageUrl)}
+                  >
                     <div className="box-100">
                       <img
-                        className="img-fluid"
+                        className="img-fluid img-fit"
                         src={each?.images?.[0]}
                         alt=""
                       />
                     </div>
-                    <p className="ms-3">
-                      {each?.name?.[router.locale || 'en-in']}
-                    </p>
+                    <div>
+                      <p className="ms-3 text-muted">
+                        {each?.name?.[router.locale || 'en-in']}
+                      </p>
+                      <b className="ms-3 text-success">₹ {each?.price}</b>
+                    </div>
                   </div>
                 ))}
             </Col>
@@ -64,7 +71,11 @@ const SearchComponent = ({
               {b &&
                 Array.isArray(a) &&
                 b.map((each, i) => (
-                  <div className="ms-3 d-flex align-items-center" key={i}>
+                  <div
+                    className="mt-1 ms-3 d-flex align-items-center border p-3 pointer"
+                    key={i}
+                    onClick={()=>router.push(each?.pageUrl)}
+                  >
                     <div className="box-100">
                       <img
                         className="img-fluid"
@@ -72,9 +83,12 @@ const SearchComponent = ({
                         alt=""
                       />
                     </div>
-                    <p className="ms-3">
-                      {each?.name?.[router.locale || 'en-in']}
-                    </p>
+                    <div>
+                      <p className="ms-3 text-muted">
+                        {each?.name?.[router.locale || 'en-in']}
+                      </p>
+                      <b className="ms-3 text-success">₹ {each?.price}</b>
+                    </div>
                   </div>
                 ))}
             </Col>
