@@ -9,7 +9,7 @@ const CommonSeo = () => {
         content="Er06B15PnGbMba7m0QvCx58KNdUM0PY3b7cD0pW15mg"
       />
       <meta property="og:type" content="Wallnutstores" />
-      <meta property="og:url" content="https://www.mozanta.com/" />
+      <meta property="og:url" content="https://wallnutstores.netlify.app/" />
       <meta
         property="og:image:url"
         content="https://i.ibb.co/znDKW0z/119533288-green-red-small-bird-hummingbird-with-bright-plumage-flying-to-pink-flower-tropical-tiny-b.png"
