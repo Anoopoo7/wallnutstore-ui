@@ -4,6 +4,7 @@ const CommonSeo = () => {
   return (
     <Head>
       <title>Home | My Website</title>
+      <meta name="google-site-verification" content="Er06B15PnGbMba7m0QvCx58KNdUM0PY3b7cD0pW15mg" />
       <meta property="og:type" content="Wallnutstores" />
       <meta property="og:url" content="https://www.mozanta.com/" />
       <meta
