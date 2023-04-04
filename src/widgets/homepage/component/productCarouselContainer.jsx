@@ -21,6 +21,14 @@ const responsive = {
     items: 1.2,
     margin: 15,
   },
+  420: {
+    items: 1.4,
+    margin: 15,
+  },
+  500: {
+    items: 1.6,
+    margin: 15,
+  },
   768: {
     items: 2.2,
     margin: 15,
