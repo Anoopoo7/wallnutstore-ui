@@ -1,6 +1,7 @@
 import HomepageLayouts from '@use/layoutHandle/homepageLayouts'
 import { Container } from 'reactstrap'
 import { getContentByPageType } from '@use/services/pageContentService'
+import CommonSeo from '@use/seo/commonseo'
 
 export async function getStaticProps(context) {
   const response = await getContentByPageType('homes')
@@ -17,6 +18,7 @@ export async function getStaticProps(context) {
 export default function Home({ widgets, search }) {
   return (
     <Container>
+      <CommonSeo />
       <HomepageLayouts widgets={widgets} search={search} />
     </Container>
   )
