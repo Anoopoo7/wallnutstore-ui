@@ -1,7 +1,7 @@
 import { TransilationProvider } from '@use/utils/TransilationProvider'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 
-/* eslint-disable @next/next/no-img-element */
 const ProductCardComponent = ({ data }) => {
   const { image, spec, active } = data || {}
   const router = useRouter()
@@ -18,7 +18,9 @@ const ProductCardComponent = ({ data }) => {
               <i></i>
             )}
             <p>
-              <img
+              <Image
+                width={24}
+                height={24}
                 src="https://img.icons8.com/material-sharp/24/null/like--v1.png"
                 alt="wishlist"
                 className="pointer"
@@ -29,7 +31,13 @@ const ProductCardComponent = ({ data }) => {
             className="img-center-product-card"
             onClick={() => router.push(spec?.redirect_url)}
           >
-            <img src={spec?.image?.[0]} alt={image} className="img-fluid p-4" />
+            <Image
+              width={1000}
+              height={1000}
+              src={spec?.image?.[0]}
+              alt={image}
+              className="img-fluid p-4"
+            />
           </div>
           <div className="mt-3">
             <l className="font-itim ms-3 mt-5">
@@ -38,7 +46,9 @@ const ProductCardComponent = ({ data }) => {
             <div className="d-flex justify-content-between">
               <p className="font-itim ms-3 mt-2">₹ {spec?.price} </p>
               <div className="me-3">
-                <img
+                <Image
+                  width={34}
+                  height={34}
                   src="https://img.icons8.com/material-sharp/20/null/shopping-cart.png"
                   alt=""
                   className="p-2 border rounded"

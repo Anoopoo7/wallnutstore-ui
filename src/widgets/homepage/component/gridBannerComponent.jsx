@@ -2,17 +2,21 @@
 import { useRouter } from 'next/router'
 import { Card, Col, Row } from 'reactstrap'
 import { TransilationProvider } from '@use/utils/TransilationProvider'
+import Image from 'next/image'
 
 const GridBannerComponent = ({ payload }) => {
   const bannner = payload?.contents || []
+  // const bannner =  []
   const router = useRouter()
   return (
     <>
       {bannner && Array.isArray(bannner) && (
-        <Row className='basic-widget'>
+        <Row className="basic-widget">
           <Col md="8">
             <Card className="p-2">
-              <img
+              <Image
+                width={1000}
+                height={1000}
                 className={`grid-banner-1 img-fluid rounded ${
                   bannner?.[0]?.spec?.navigate ? 'pointer' : ''
                 }`}
@@ -33,7 +37,9 @@ const GridBannerComponent = ({ payload }) => {
                     bannner?.[1]?.spec?.navigate ? 'pointer' : ''
                   }`}
                 >
-                  <img
+                  <Image
+                    width={1000}
+                    height={1000}
                     className="img-fluid overflow-hidden rounded grid-banner-2"
                     src={TransilationProvider(bannner?.[1]?.spec?.image)}
                     alt=""
@@ -50,7 +56,9 @@ const GridBannerComponent = ({ payload }) => {
                     bannner?.[2]?.spec?.navigate ? 'pointer' : ''
                   }`}
                 >
-                  <img
+                  <Image
+                    width={1000}
+                    height={1000}
                     className="img-fluid rounded grid-banner-2"
                     src={TransilationProvider(bannner?.[2]?.spec?.image)}
                     alt=""

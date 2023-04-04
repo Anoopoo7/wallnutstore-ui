@@ -1,5 +1,5 @@
-const nextTranslate = require('next-translate-plugin')
-const webpack = require('webpack')
+const nextTranslate = require('next-translate-plugin');
+const webpack = require('webpack');
 
 module.exports = nextTranslate({
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
@@ -9,7 +9,10 @@ module.exports = nextTranslate({
         jQuery: 'jquery',
         'window.jQuery': 'jquery',
       }),
-    )
-    return config
-  }
-})
+    );
+    return config;
+  },
+  images: {
+    domains: ['i.ibb.co','img.icons8.com'],
+  },
+});

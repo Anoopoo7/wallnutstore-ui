@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import { TransilationProvider } from '@use/utils/TransilationProvider'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Slider from 'react-slick'
 import { Card } from 'reactstrap'
@@ -26,7 +26,9 @@ const CarouselBannerComponent = ({ payload }) => {
             <>
               {each.active && (
                 <div key={index}>
-                  <img
+                  <Image
+                    width={1000}
+                    height={1000}
                     onClick={() =>
                       each?.spec?.navigate &&
                       router.push(each?.spec?.redirect_url)

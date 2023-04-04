@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable @next/next/no-img-element */
 import useTranslation from 'next-translate/useTranslation'
+import Image from 'next/image'
 import Link from 'next/link'
 import { Card, Col, Row } from 'reactstrap'
 
@@ -14,19 +15,39 @@ const FooterComponent = ({ payload }) => {
           <div className="ms-3 mt-5">
             <h5>{t('join_with_us')}</h5>
             <Link href="/ppp">
-              <img src="https://img.icons8.com/color/36/null/facebook.png" />
+              <Image
+                width={34}
+                height={34}
+                src="https://img.icons8.com/color/36/null/facebook.png"
+              />
             </Link>
             <Link href="/ppp">
-              <img src="https://img.icons8.com/fluency/36/null/instagram-new.png" />
+              <Image
+                width={34}
+                height={34}
+                src="https://img.icons8.com/fluency/36/null/instagram-new.png"
+              />
             </Link>
             <Link href="/ppp">
-              <img src="https://img.icons8.com/color/36/null/twitter--v1.png" />
+              <Image
+                width={34}
+                height={34}
+                src="https://img.icons8.com/color/36/null/twitter--v1.png"
+              />
             </Link>
           </div>
           <div className="me-3 mt-5">
             <h5>{t('we_accept')}</h5>
-            <img src="https://img.icons8.com/color-glass/36/null/visa.png" />
-            <img src="https://img.icons8.com/color/32/null/google-pay-india.png" />
+            <Image
+              width={34}
+              height={34}
+              src="https://img.icons8.com/color-glass/36/null/visa.png"
+            />
+            <Image
+              width={34}
+              height={34}
+              src="https://img.icons8.com/color/32/null/google-pay-india.png"
+            />
           </div>
         </div>
         <Row className="ms-3 me-3">
