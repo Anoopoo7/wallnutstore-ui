@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Card } from 'reactstrap'
 import useTranslation from 'next-translate/useTranslation'
 import Image from 'next/image'
@@ -19,9 +20,7 @@ const NavbarComponent = ({ payload, search }) => {
                   onClick={() => setEnableSearch((prev) => !prev)}
                   className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red"
                 >
-                  <Image
-                    width={24}
-                    height={24}
+                  <img
                     src="https://img.icons8.com/ios-glyphs/24/null/search--v1.png"
                     alt="search"
                   />
@@ -29,9 +28,7 @@ const NavbarComponent = ({ payload, search }) => {
               )}
               {enable_profile && (
                 <div className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red">
-                  <Image
-                    width={24}
-                    height={24}
+                  <img
                     src="https://img.icons8.com/material-sharp/24/null/person-male.png"
                     alt="search"
                   />
@@ -39,9 +36,7 @@ const NavbarComponent = ({ payload, search }) => {
               )}
               {enable_wishlist && (
                 <div className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red">
-                  <Image
-                    width={24}
-                    height={24}
+                  <img
                     src="https://img.icons8.com/material-sharp/24/null/like--v1.png"
                     alt="search"
                   />
@@ -49,9 +44,7 @@ const NavbarComponent = ({ payload, search }) => {
               )}
               {enable_cart && (
                 <div className="nav-icon border ms-1 me-1 p-1 rounded pointer hover-red">
-                  <Image
-                    width={24}
-                    height={24}
+                  <img
                     src="https://img.icons8.com/material-sharp/24/null/shopping-cart.png"
                     alt="search"
                   />

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { TransilationProvider } from '@use/utils/TransilationProvider'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
@@ -18,9 +19,7 @@ const ProductCardComponent = ({ data }) => {
               <i></i>
             )}
             <p>
-              <Image
-                width={24}
-                height={24}
+              <img
                 src="https://img.icons8.com/material-sharp/24/null/like--v1.png"
                 alt="wishlist"
                 className="pointer"
@@ -46,9 +45,7 @@ const ProductCardComponent = ({ data }) => {
             <div className="d-flex justify-content-between">
               <p className="font-itim ms-3 mt-2">₹ {spec?.price} </p>
               <div className="me-3">
-                <Image
-                  width={34}
-                  height={34}
+                <img
                   src="https://img.icons8.com/material-sharp/20/null/shopping-cart.png"
                   alt=""
                   className="p-2 border rounded"
