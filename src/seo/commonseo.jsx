@@ -4,17 +4,20 @@ const CommonSeo = () => {
   return (
     <Head>
       <title>Home | My Website</title>
-      <meta name="google-site-verification" content="Er06B15PnGbMba7m0QvCx58KNdUM0PY3b7cD0pW15mg" />
+      <meta
+        name="google-site-verification"
+        content="Er06B15PnGbMba7m0QvCx58KNdUM0PY3b7cD0pW15mg"
+      />
       <meta property="og:type" content="Wallnutstores" />
       <meta property="og:url" content="https://www.mozanta.com/" />
       <meta
         property="og:image:url"
-        content="https://wallnutstores.netlify.app/images/fav.png"
+        content="https://i.ibb.co/znDKW0z/119533288-green-red-small-bird-hummingbird-with-bright-plumage-flying-to-pink-flower-tropical-tiny-b.png"
       />
       <meta property="og:description" content="eCommerce store" />
       <meta
         property="og:image"
-        content="https://wallnutstores.netlify.app/images/fav.png"
+        content="https://i.ibb.co/znDKW0z/119533288-green-red-small-bird-hummingbird-with-bright-plumage-flying-to-pink-flower-tropical-tiny-b.png"
       />
       <meta property="og:image:type" content="image/svg" />
       <meta property="og:image:width" content="200" />
@@ -42,12 +45,12 @@ const CommonSeo = () => {
       <meta property="og:site_name" content="Wallnutstores" />
       <link
         rel="icon"
-        href="https://wallnutstores.netlify.app/images/fav.png"
+        href="https://i.ibb.co/znDKW0z/119533288-green-red-small-bird-hummingbird-with-bright-plumage-flying-to-pink-flower-tropical-tiny-b.png"
         type="image/x-icon"
       />
       <link
         rel="shortcut icon"
-        href="https://wallnutstores.netlify.app/images/fav.png"
+        href="https://i.ibb.co/znDKW0z/119533288-green-red-small-bird-hummingbird-with-bright-plumage-flying-to-pink-flower-tropical-tiny-b.png"
         type="image/x-icon"
       />
     </Head>
