@@ -12,12 +12,12 @@ const CommonSeo = () => {
       <meta property="og:url" content="https://wallnutstores.netlify.app/" />
       <meta
         property="og:image:url"
-        content="https://i.ibb.co/6nYZQhP/image.png"
+        content="https://i.ibb.co/nw2wvVN/Group-9.png"
       />
       <meta property="og:description" content="eCommerce store" />
       <meta
         property="og:image"
-        content="https://i.ibb.co/6nYZQhP/image.png"
+        content="https://i.ibb.co/nw2wvVN/Group-9.png"
       />
       <meta property="og:image:type" content="image/svg" />
       <meta property="og:image:width" content="200" />
@@ -45,12 +45,12 @@ const CommonSeo = () => {
       <meta property="og:site_name" content="Wallnutstores" />
       <link
         rel="icon"
-        href="https://i.ibb.co/6nYZQhP/image.png"
+        href="https://i.ibb.co/nw2wvVN/Group-9.png"
         type="image/x-icon"
       />
       <link
         rel="shortcut icon"
-        href="https://i.ibb.co/6nYZQhP/image.png"
+        href="https://i.ibb.co/nw2wvVN/Group-9.png"
         type="image/x-icon"
       />
     </Head>
