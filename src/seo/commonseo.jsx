@@ -12,12 +12,12 @@ const CommonSeo = () => {
       <meta property="og:url" content="https://wallnutstores.netlify.app/" />
       <meta
         property="og:image:url"
-        content="https://i.ibb.co/znDKW0z/119533288-green-red-small-bird-hummingbird-with-bright-plumage-flying-to-pink-flower-tropical-tiny-b.png"
+        content="https://i.ibb.co/6nYZQhP/image.png"
       />
       <meta property="og:description" content="eCommerce store" />
       <meta
         property="og:image"
-        content="https://i.ibb.co/znDKW0z/119533288-green-red-small-bird-hummingbird-with-bright-plumage-flying-to-pink-flower-tropical-tiny-b.png"
+        content="https://i.ibb.co/6nYZQhP/image.png"
       />
       <meta property="og:image:type" content="image/svg" />
       <meta property="og:image:width" content="200" />
@@ -45,12 +45,12 @@ const CommonSeo = () => {
       <meta property="og:site_name" content="Wallnutstores" />
       <link
         rel="icon"
-        href="https://i.ibb.co/znDKW0z/119533288-green-red-small-bird-hummingbird-with-bright-plumage-flying-to-pink-flower-tropical-tiny-b.png"
+        href="https://i.ibb.co/6nYZQhP/image.png"
         type="image/x-icon"
       />
       <link
         rel="shortcut icon"
-        href="https://i.ibb.co/znDKW0z/119533288-green-red-small-bird-hummingbird-with-bright-plumage-flying-to-pink-flower-tropical-tiny-b.png"
+        href="https://i.ibb.co/6nYZQhP/image.png"
         type="image/x-icon"
       />
     </Head>
