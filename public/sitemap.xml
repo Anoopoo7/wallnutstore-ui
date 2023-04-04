@@ -1,48 +1,47 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-  <loc> https://wallnutstores.netlify.app</loc>
+  <loc>https://wallnutstores.netlify.app</loc>
  <lastmod>2023-04-04</lastmod>
  <changefreq>monthly</changefreq> 
   <priority>0.9</priority>
  </url>
  <url>
-  <loc> https://wallnutstores.netlify.app/sitemap.xml</loc>
+  <loc>https://wallnutstores.netlify.app/sitemap.xml</loc>
  <lastmod>2023-04-04</lastmod>
  <changefreq>monthly</changefreq>
   <priority>0.9</priority>
  </url>
 <url>
-  <loc
-    > https://wallnutstores.netlify.app/audio-technica-ath-m30x-profes-86989885b64e.html</loc>
+  <loc>https://wallnutstores.netlify.app/audio-technica-ath-m30x-profes-86989885b64e.html</loc>
  <lastmod>2023-04-04</lastmod>
- <changefreq>Daily</changefreq> 
+ <changefreq>monthly</changefreq> 
   <priority>0.8</priority>
  </url>
 <url>
   <loc
-    > https://wallnutstores.netlify.app/working-day-and-date-analog-wae4de3ec7c8cd.html</loc>
+    >https://wallnutstores.netlify.app/working-day-and-date-analog-wae4de3ec7c8cd.html</loc>
  <lastmod>2023-04-04</lastmod>
- <changefreq>Daily</changefreq> 
+ <changefreq>monthly</changefreq> 
   <priority>0.8</priority>
  </url>
 <url>
-  <loc> https://wallnutstores.netlify.app/test-363f54383eaf.html</loc>
+  <loc>https://wallnutstores.netlify.app/test-363f54383eaf.html</loc>
  <lastmod>2023-04-04</lastmod>
- <changefreq>Daily</changefreq> 
-  <priority>0.8</priority>
- </url>
-<url>
-  <loc
-    > https://wallnutstores.netlify.app/working-day-and-date-analog-wa-c587e660117f.html</loc>
- <lastmod>2023-04-04</lastmod>
- <changefreq>Daily</changefreq> 
+ <changefreq>monthly</changefreq> 
   <priority>0.8</priority>
  </url>
 <url>
   <loc
-    > https://wallnutstores.netlify.app/canon-eos-200d-ii-dslr-camera--1c99ab4bad24.html</loc>
+    >https://wallnutstores.netlify.app/working-day-and-date-analog-wa-c587e660117f.html</loc>
  <lastmod>2023-04-04</lastmod>
- <changefreq>Daily</changefreq> 
+ <changefreq>monthly</changefreq> 
+  <priority>0.8</priority>
+ </url>
+<url>
+  <loc
+    >https://wallnutstores.netlify.app/canon-eos-200d-ii-dslr-camera--1c99ab4bad24.html</loc>
+ <lastmod>2023-04-04</lastmod>
+ <changefreq>monthly</changefreq> 
   <priority>0.8</priority>
  </url>
 </urlset>
