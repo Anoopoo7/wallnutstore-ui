@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://wallnutstores.netlify.app/api/posts-sitemap
+Sitemap: https://wallnutstores.netlify.app/sitemap.xml
